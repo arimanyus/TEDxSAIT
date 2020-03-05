@@ -243,6 +243,7 @@ a:hover, a:active, a:focus {
 .navbar-default .navbar-nav li a span {
   position: relative;
   display: block;
+  margin-top: 10px;
   padding-bottom: 2px;
 }
 
@@ -431,7 +432,8 @@ a:hover, a:active, a:focus {
 }
 
 #about .team-thumb .description {
-  font-size: 18px;
+  font-size: 12px;
+  line-height: 13px;
   width: 80%;
   margin: 0 auto;
   opacity: 0;
@@ -668,11 +670,43 @@ footer {
 
 /*my css start*/
 .logopro {
-    height: 50px !important;
+    height: 10% !important;
     width: 32% !important;
 }
 
 /*my css end*/
+
+@bg: #2d2d37; // Dark blue
+@primary: #fd6b21; // Orange
+
+body { background: @bg;}
+a { color: white; text-decoration: none; }
+
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/*CSS for menu tabs*/
+
 
 
 
